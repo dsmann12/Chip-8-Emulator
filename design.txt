@@ -1,0 +1,258 @@
+#ifndef CHIP8CPU_H
+#define CHIP8CPU_H
+
+#include <cstdint>
+
+#define MEMSIZE 0x1000
+#define STARTADDR 0x200
+#define REGISTERCOUNT 16
+#define STACKSIZE 24
+
+
+// namespace Chip8
+// SYSTEM struct or class? class
+// --Union Memory and Struct of Other Objects which reside in memory
+// -- CPU
+// ----Registers
+// ----Instructions
+// ----Instruction Execution
+// -- Memory -- whole system
+// -- Font
+// -- Display
+// -- Keyboard
+// -- Stack
+// -- Load ROM
+// -- Initialize
+// Union of memory and struct with hardware
+
+
+
+// MEMORY
+// The Chip-8 has 0x1000 bytes of RAM (4KB)
+// Big Endian
+// Memory is 12 bits long
+// RAM is outside the CPU
+// Programs typically loaded at address [0x200]
+// First 0x200 bytes (512) are for interpreter
+
+
+// CPU
+// 16 1-byte registers named V0, V1, V2, ..., VF
+// Any can be used for data manipulation
+// But VF if osten modiied by certain instructions to act as a flag
+uint8_t v[REGISTERCOUNT];
+// 16bit address register I
+uint16_t i_reg;
+// 16bit program counter
+uint16_t pc;
+// 8bit stack pointer
+uint8_t sp;
+// two special purpose 8bit registers for delay and sound timers
+// when these regs are nonzero they are automatically decremented at rate of 60Hz
+uint8_t delay, sound;
+
+// Does stack exist inside system or cpu?
+// Stack should nest 24 return addressesr
+// used to store address that interpreter should return to when finished with a subroutine
+// to transfer control back from subroutine, machine language subroutine must end with byte D4
+// D4 signalled completion of subroutine
+uint16_t stack[STACKSIZE];
+
+
+// 35 instructions
+		// CPUw
+// switch or x macro?
+// xmacro basically a bunch of if else statements
+// would a switch be faster? Or a dictionary?
+// switch
+// xmacro of switch?
+// execute instruction
+
+// Data register instructions
+// 6XNN Store number NN in register VX
+// 8XY0 Store the value of register VY in reg VX
+// 7XNN Add the value NN to reg VX
+// 8XY4 Add value of reg XY to reg VX; Set VF to 01 if a carry, otherwise 00
+// 8XY5 Sub value of reg VY from reg VX; Set VF to 00 if borrow, otherwise 01
+// 8XY7 Set reg VX to value of VY - VX; Set VF to 00 if borrow, otherwise 01
+// 8XY2 Set VX to VX & VY
+// 8XY1 Set VX to VX | VY
+// 8XY3 Set VX to VX ^ VY
+// 8XY6 Store value of reg VY >> 1 in reg VX; Set reg VF to lsb prior to shift
+// 8XYE Store value of reg VY MM 1 in reg VX; Set reg VF to msb prior to shift
+// CXNN Set VX to a random number with mask of NN
+
+// Flow Control Instructions
+// 1NNN Jump to address NNN
+// BNNN Jump to address NNN + V0
+// 3XNN Skip following instruction if value of register VX = NN
+// 5XY0 Skip the following instruction if value of reg VX = VY
+// 4XNN Skip following instruction if value of reg VX != NN
+// 9XY0 Skup following instruction if value of register vX != VY
+
+// Subroutine Instructions
+// 2NNN Execute subroutine starting at address NNN
+// Execution will then continue from this address until a termination instruction.
+// Once terminated, the program execution should proceed at the point from which last subroutine was called
+// 00EE Return from a subroutine
+// 0NNN Execute machine language subroutine at address NNN
+// 0NNN is considered deprecated and often unimplemented
+// Necessary for machine language subroutine to end with byte D4 to signal completion
+
+// Timers
+// FX15 Set delay timer to value of reg VX
+// FX07 Store the current valye of the delay timer in reg VX
+// FX18 Set sound timer to value of register VX
+
+// KEYBOARD
+// 16 key keypad, each key corresponds to hex digit
+// Interpreters often map key presses of standard keyboard to simulate hex keyboard
+// FX0A Wait for a keypress and store the result in reg VX
+// EX9E Skip following instruction if key corresponds to hex value currently stored in reg VX is pressed
+// EXA1 Skip following instruction if key corresponding to hex value stored in reg VX is not pressed
+
+// GRAPHICS
+// Monochrome graphics on black and white 64x32 screen
+// Default, screen is set to all black pixels
+// Only method for drawing is using sprites
+// Chip 8 sprites always 8px wide and 1-15px high
+// Sprite data in memory. One byte corresponds to one row of given sprite
+// How many rows (bytes) ecompass a sprite is specified through instructions
+// A bit set to one corresponds to a white pixel. 0 corresponds to a transparent pixel
+
+// Advised to place all sprite data in a section of memory that sits independently of the main program memory
+// E.g. sprite could be placed toward the beginning of the program and preceded by a jump instruction
+// forcing interpreter to skip over this data. In another case, sprite data could be placed at the end 
+// o fthe program, and the program could be coded in a way such that the sprite data would never be reached
+// by the interpreter
+
+// I REGISTER
+// Used to store memory addresses. Esp to for data for a sprite
+// Useful when performing operations involving reading and writing to and from memory (graphics)
+// ANNN Store memory address NNN in register I
+// FX1E Add the stored register VS to register I
+// NO INSTRUCTIONS EXIST TO MODIY I REGISTER AFTER IT IS SET TO A GIVEN VALUE
+
+// DRAWING SPRITES
+// DXYN Draw a sprite at position VX,VY with N bytes of sprite data starting at address stored in I
+// Set VF to 01 if any set pixels are changed to unset, and 00 otherwise
+// If sprite is to be visible, VX must be between 00 and 3F and VY between 00 and 1F
+// N bytes of memory starting from address stored in reg I are read
+// Used to draw the sprite
+// Value o I determineds which sprite is drawn and should always point to mem adress where sprite data for
+// desired graphic is stored.
+// Corresponding graphic on screen will be 8px wide and N pixels high
+// 00E0 Clear the screen
+
+// XOR Mode
+// All sprites drawn to screen using an XOR mode
+// When request to draw a sprite is processed the given sprite's data is XOR'd with current graphics data
+// of scren. Allows for absence of an instruction to erase a sprite at a given position. When programmer
+// wants to erase a sprite, they simply have to redraw that same sprite on the screen at the same location
+// as before
+// The DXYN instruction modifies the VF data register to reflect any state toggles dur to XOR behavior
+
+// DRAWING FONTS
+// To allow for simple output of characters using DXYN
+// FX29 Set I to memory address of the sprite data corresponding to hex digit stored in reg VX
+// 0 0xF999F
+// 1 0x26227
+// 2 0xF1F8F
+// 3 0xF1F1F
+// 4 0x99f11
+// 5 0XF8F1F
+// 6 0xF8F9F
+// 7 0xF1244
+// 8 0xF9F9F
+// 9 0xF9F1F
+// A 0xF9F99
+// B 0xE9E9E
+// C 0xF888F
+// D 0xE999E
+// E 0xF8F8F
+// F 0xF8F88
+
+
+// Binary Coded Decimal
+// Decimal equivalent of a binary or hex number in memory stored as individual decimal digits. 
+// Can convert any value stored in a data register into its BCD equivalent
+// FX33 Store the binary-coded decimal equivalent of the value stored in register VX at addresses I,I+1,I+2
+// FX65 Fill registers V0 to VX inclusive with values stored in memory starting at A
+// I is set to I + X + 1 after operation
+
+// Execute instructions
+// 0 -> 3 instructions (switch?)
+// 1 -> jump to address
+// 2 -> execute subroutine at address NNN
+// 3 -> skip following instructoin if V[X] = NN
+// 4 -> Skip following i fV[X] != NN
+// 5 -> 1 
+// 6 -> 1 
+// 7 -> 1
+// 8 -> 9 switch
+// 9 -> 1
+// A -> 1
+// B -> 1
+// C -> 1
+// D -> 1
+// E -> 2
+// F -> 9 switch
+void execute_instruction(uint16_t opcode) {
+	uint8_t o = opcode >> 12;
+	uint8_t x = (opcode >> 8) & 0xF;
+	uint8_t y = (opcode >> 4) & 0xF;
+	uint8_t n = opcode & 0xF;
+	uint16_t nnn = opcode & 0xFFF;
+	uint8_t nn = opcode & 0xFF;
+	// oXYN
+	//oXNN
+	//oNNN
+	switch(o) {
+		case 0x0:
+			break;
+		case 0x1:
+			break;
+		case 0x2:
+			break;
+		case 0x3:
+			break;
+		case 0x4:
+			break;
+		case 0x5:
+			break;
+		case 0x6:
+			break;
+		case 0x7:
+			break;
+		case 0x8:
+			break;
+		case 0x9;
+			break;
+		case 0xA:
+			break;
+		case 0xB:
+			break;
+		case 0xC:
+			break;
+		case 0xD:
+			break;
+		case 0xE:
+			break;
+		case 0xF:
+			break;
+		default:
+			break;
+	}
+}
+
+// load rom
+void load_rom() {
+	// get a file
+	// load it at the start address
+	// set the pc and begin executing
+}
+
+
+
+
+#endif
