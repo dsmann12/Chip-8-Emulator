@@ -1,7 +1,6 @@
 #ifndef CHIP8CPU_H
 #define CHIP8CPU_H
 
-#include <cstdint>
 #include <string>
 
 #define MEMSIZE 0x1000
@@ -32,7 +31,8 @@ namespace chip8 {
 	// Systems connects components and runs system functions
 	class chip8 {
 		public:
-			void exec_instructions();
+			chip8();
+			void exec_instruction();
 			void load_rom(const std::string &rom);
 		private:
 			union {
@@ -46,6 +46,11 @@ namespace chip8 {
 					unsigned short stack[STACKSIZE];
 				};
 			};
+
+			void exec_opcode8xxx(unsigned short &opcode, unsigned char &o, unsigned char &x, 
+							unsigned char &y, unsigned char &n, unsigned char &nn, 
+							unsigned short &nnn);	
+			void exec_opcodeFxxx(unsigned short &opcode, unsigned char &x, unsigned char &nn);
 	};
 };
 
