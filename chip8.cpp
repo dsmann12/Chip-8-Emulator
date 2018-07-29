@@ -22,31 +22,39 @@ void chip8::chip8::exec_opcodeFxxx(unsigned short &opcode, unsigned char &x, uns
 			break;
 		// 0xFX0A -> Wait for a keypress and store the result in register VX
 		case 0x0A:
+			std::cout << "Unimplemented opcode\n";
 			break;
-		// 0xFX15 -> Ste delay timer to the value of register VX
+		// 0xFX15 -> Set delay timer to the value of register VX
 		case 0x15:
+			this->_cpu.delay_timer = this->_cpu.v[x];
 			break;
 		// 0xFX18 -> Set the sound timer to the value of register VX
 		case 0x18:
+			this->_cpu.sound_timer = this->_cpu.v[x];
 			break;
 		// 0xFX1E -> Add the value stored in register VX to register I
 		case 0x1E:
+			this->_cpu.i_reg += this->_cpu.v[x];
 			break;
 		// 0xFX29 -> Set I to memory address of the sprite data corresponding to the hex digit
 		// stored in register VX
 		case 0x29:
+			std::cout << "Unimplemented opcode\n";
 			break;
 		// 0xFX33 -> Store the binary coded decimal equivalent of value stored in register VX at
 		// addresses I, I+1, and I+2
 		case 0x33:
+			std::cout << "Unimplemented opcode\n";
 			break;
 		// 0xFX55 -> Store the values of registers V0 to VX inclusive in memory starting at address I
 		// I is set to I + X + 1 after operation
 		case 0x55:
+			std::cout << "Unimplemented opcode\n";
 			break;
 		// 0xFX65 -> Fill registers V0 to VX inclusive with values stored in memory starting at address I
 		// I is set to I + X + 1 after operation
 		case 0x65:
+			std::cout << "Unimplemented opcode\n";
 			break;
 	}
 }
@@ -179,6 +187,7 @@ void chip8::chip8::exec_instruction() {
 		case 0x8:
 			// Do its own function with its own switch
 			std::cout << "8 opcode needing to do one of many things. Math\n";
+			exec_opcode8xxx(opcode, o, x, y, n, nn, nnn);
 			break;
 		case 0x9:
 			if (this->_cpu.v[x] != this->_cpu.v[y]) {
@@ -189,8 +198,10 @@ void chip8::chip8::exec_instruction() {
 			this->_cpu.i_reg = nnn;
 			break;
 		case 0xB:
+			std::cout << "Unimplemented opcode\n";
 			break;
 		case 0xC:
+			std::cout << "Unimplemented opcode\n";
 			break;
 		case 0xD:
 			std::cout << "Draw a sprite at position "
@@ -199,11 +210,11 @@ void chip8::chip8::exec_instruction() {
 			<< "starting at address I: " << this->_cpu.i_reg << std::endl;
 			break;
 		case 0xE:
+			std::cout << "Unimplemented opcode\n";
 			break;
 		case 0xF:
 			// Do its own function with its own switch for many other 
-			std::cout << "F opcode neding to do one of many things from timers "
-			<< "to I reg to drawing fonts to binary coded decimals\n";
+			exec_opcodeFxxx(opcode, x, nn);
 			break;
 		default:
 			std::cout << "This is default\n";
@@ -245,7 +256,7 @@ int main() {
 	chip8::chip8 chip8;
 	// load rom
 	chip8.load_rom("INVADERS");
-	for(int i = 0; i < 20; i++) {
+	for(int i = 0; i < 30; i++) {
 		chip8.exec_instruction();
 	}
 	// run
