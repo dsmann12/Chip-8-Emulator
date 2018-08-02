@@ -7,7 +7,8 @@
 #define STARTADDR 0x200
 #define REGISTERCOUNT 16
 #define STACKSIZE 24
-
+#define HEIGHT 32
+#define WIDTH 64
 
 // Interpreter Namespace
 namespace chip8 {
@@ -43,7 +44,10 @@ namespace chip8 {
 					// Keyboard - Store keys as a bitmap?
 					// Display
 					// Stack
+					// 48 bytes for stack. 24 memory locations
 					unsigned short stack[STACKSIZE];
+					// 256 bytes allocated for display
+					unsigned char display_mem[(HEIGHT*WIDTH) / 8];
 				};
 			};
 

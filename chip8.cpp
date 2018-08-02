@@ -144,44 +144,52 @@ void chip8::chip8::exec_instruction() {
 	unsigned char nn = (opcode & 0xFF);
 	unsigned short nnn = (opcode & 0x0FFF);
 
-
+	/*
 	std::cout << "O is " << +o << std::endl;
 	std::cout << "x is " << +x << std::endl;
 	std::cout << "y is " << +y << std::endl;
 	std::cout << "n is " << +n << std::endl;
 	std::cout << "nn is " << +nn << std::endl;
 	std::cout << "nnn is "<< +nnn << std::endl;
+	*/
 
 	switch(o) {
 		case 0x0:
+			// O0E0 -> Return from a subroutine
 			std::cout << "Return from a subroutine\n";
 			break;
 		case 0x1:
-			std::cout << "This is 1\n";
+			// 1NNN -> Jump to address NNN
 			this->_cpu.pc = nnn;
 			break;
 		case 0x2:
+			// 2NNN -> Execute subroutine starting at address NNN
 			std::cout << "Execute subroutine starting at address NNN: " << nnn << "\n";
 			break;
 		case 0x3:
+			// 3XNN -> Skip the following instruction if the value of register VX equals NN
 			if (this->_cpu.v[x] == nn) {
 				this->_cpu.pc += 2;
 			}
 			break;
 		case 0x4:
+			// 4XNN -> Skip the following instruction if the value of register VX != NN
 			if (this->_cpu.v[x] != nn) {
 				this->_cpu.pc += 2;
 			}
 			break;
 		case 0x5:
+			// 5XY0 -> Skip following instruction if value of register VX = value of reg VY
 			if (this->_cpu.v[x] == this->_cpu.v[y]) {
 				this->_cpu.pc += 2;
 			}
 			break;
 		case 0x6:
+			// 6XNN -> Store number NN is VX
 			this->_cpu.v[x] = nn;
 			break;
 		case 0x7:
+			// 7XNN -> Add number NN to VX
 			this->_cpu.v[x] += nn;
 			break;
 		case 0x8:
@@ -190,26 +198,48 @@ void chip8::chip8::exec_instruction() {
 			exec_opcode8xxx(opcode, o, x, y, n, nn, nnn);
 			break;
 		case 0x9:
+			// 9XY0 -> Skip following instruction if value of reg VX is !- to value of reg VY
 			if (this->_cpu.v[x] != this->_cpu.v[y]) {
 				this->_cpu.pc += 2;
 			}
 			break;
 		case 0xA:
+			// ANNN -> Store memory address NNN in register I
 			this->_cpu.i_reg = nnn;
 			break;
 		case 0xB:
+			// BNNN -> Jump to address NNN + V0
 			std::cout << "Unimplemented opcode\n";
 			break;
 		case 0xC:
+			// CXNN -> Set VX to a random number with mask of NN
 			std::cout << "Unimplemented opcode\n";
 			break;
 		case 0xD:
+			// Draw a sprite at position VX, VY with N bytes of sprite data starting at address stored in I
+			// Set VF to 01 if any set pixels are changed to unset, and 00 otherwise
 			std::cout << "Draw a sprite at position "
 			<< "VX: " << +this->_cpu.v[x] << " VY: " << +this->_cpu.v[y]
 			<< " with N: " << +n << " bytes of sprite data "
 			<< "starting at address I: " << this->_cpu.i_reg << std::endl;
+
+			// VX must contain a value between 00 and 3F (0-63)
+			// VY must contain a value between 00 and 1F (0-31)
+			
+			// get location of sprite data
+			auto loc = memory[this->_cpu.i_reg];
+			for (int i = 0; i < n; ++i) {
+				auto byte = memory[this->_cpu.i_reg + i];
+				std::cout << "Sprite " << +i << " is " << +byte << std::endl;
+
+				// Then go through each bit of byte
+				for (int j = 0; j < 8; ++j) {
+
+				}	
+			}
 			break;
 		case 0xE:
+			// Two possibilities
 			std::cout << "Unimplemented opcode\n";
 			break;
 		case 0xF:
@@ -237,7 +267,7 @@ void chip8::chip8::load_rom(const std::string &rom) {
 	unsigned short pos = 0x200;
 	unsigned char byte = 0;
 	unsigned int count = 0;
-	while(ist.good()) {
+	while (ist.good()) {
 		this->memory[pos++] = ist.get();
 		count += ist.gcount();
 	}
@@ -256,9 +286,11 @@ int main() {
 	chip8::chip8 chip8;
 	// load rom
 	chip8.load_rom("INVADERS");
-	for(int i = 0; i < 30; i++) {
+	for(int i = 0; i < 1283; i++) {
 		chip8.exec_instruction();
 	}
+
+
 	// run
 	return 0;
 }

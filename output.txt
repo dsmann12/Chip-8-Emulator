@@ -1,0 +1,2603 @@
+Executing load_rom
+Path is ROM/INVADERS
+Count is 1283
+First byte is 0x12
+Executing exec_instructions
+Opcode is 0x1225
+Executing exec_instructions
+Opcode is 0x6000
+Executing exec_instructions
+Opcode is 0x6100
+Executing exec_instructions
+Opcode is 0x6208
+Executing exec_instructions
+Opcode is 0xa3d3
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0 VY: 0 with N: 0x8 bytes of sprite data starting at address I: 0x3d3
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0 VY: 0x8 with N: 0x8 bytes of sprite data starting at address I: 0x3db
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0 VY: 0x10 with N: 0x8 bytes of sprite data starting at address I: 0x3e3
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0 VY: 0x18 with N: 0x8 bytes of sprite data starting at address I: 0x3eb
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x7008
+Executing exec_instructions
+Opcode is 0x6100
+Executing exec_instructions
+Opcode is 0x3040
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x8 VY: 0 with N: 0x8 bytes of sprite data starting at address I: 0x3f3
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x8 VY: 0x8 with N: 0x8 bytes of sprite data starting at address I: 0x3fb
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x8 VY: 0x10 with N: 0x8 bytes of sprite data starting at address I: 0x403
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x8 VY: 0x18 with N: 0x8 bytes of sprite data starting at address I: 0x40b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x7008
+Executing exec_instructions
+Opcode is 0x6100
+Executing exec_instructions
+Opcode is 0x3040
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x10 VY: 0 with N: 0x8 bytes of sprite data starting at address I: 0x413
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x10 VY: 0x8 with N: 0x8 bytes of sprite data starting at address I: 0x41b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x10 VY: 0x10 with N: 0x8 bytes of sprite data starting at address I: 0x423
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x10 VY: 0x18 with N: 0x8 bytes of sprite data starting at address I: 0x42b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x7008
+Executing exec_instructions
+Opcode is 0x6100
+Executing exec_instructions
+Opcode is 0x3040
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x18 VY: 0 with N: 0x8 bytes of sprite data starting at address I: 0x433
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x18 VY: 0x8 with N: 0x8 bytes of sprite data starting at address I: 0x43b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x18 VY: 0x10 with N: 0x8 bytes of sprite data starting at address I: 0x443
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x18 VY: 0x18 with N: 0x8 bytes of sprite data starting at address I: 0x44b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x7008
+Executing exec_instructions
+Opcode is 0x6100
+Executing exec_instructions
+Opcode is 0x3040
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x20 VY: 0 with N: 0x8 bytes of sprite data starting at address I: 0x453
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x20 VY: 0x8 with N: 0x8 bytes of sprite data starting at address I: 0x45b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x20 VY: 0x10 with N: 0x8 bytes of sprite data starting at address I: 0x463
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x20 VY: 0x18 with N: 0x8 bytes of sprite data starting at address I: 0x46b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x7008
+Executing exec_instructions
+Opcode is 0x6100
+Executing exec_instructions
+Opcode is 0x3040
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x28 VY: 0 with N: 0x8 bytes of sprite data starting at address I: 0x473
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x28 VY: 0x8 with N: 0x8 bytes of sprite data starting at address I: 0x47b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x28 VY: 0x10 with N: 0x8 bytes of sprite data starting at address I: 0x483
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x28 VY: 0x18 with N: 0x8 bytes of sprite data starting at address I: 0x48b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x7008
+Executing exec_instructions
+Opcode is 0x6100
+Executing exec_instructions
+Opcode is 0x3040
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x30 VY: 0 with N: 0x8 bytes of sprite data starting at address I: 0x493
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x30 VY: 0x8 with N: 0x8 bytes of sprite data starting at address I: 0x49b
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x30 VY: 0x10 with N: 0x8 bytes of sprite data starting at address I: 0x4a3
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x30 VY: 0x18 with N: 0x8 bytes of sprite data starting at address I: 0x4ab
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x7008
+Executing exec_instructions
+Opcode is 0x6100
+Executing exec_instructions
+Opcode is 0x3040
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x38 VY: 0 with N: 0x8 bytes of sprite data starting at address I: 0x4b3
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x38 VY: 0x8 with N: 0x8 bytes of sprite data starting at address I: 0x4bb
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x38 VY: 0x10 with N: 0x8 bytes of sprite data starting at address I: 0x4c3
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x122d
+Executing exec_instructions
+Opcode is 0xd018
+Draw a sprite at position VX: 0x38 VY: 0x18 with N: 0x8 bytes of sprite data starting at address I: 0x4cb
+Executing exec_instructions
+Opcode is 0x7108
+Executing exec_instructions
+Opcode is 0xf21e
+Executing exec_instructions
+Opcode is 0x3120
+Executing exec_instructions
+Opcode is 0x7008
+Executing exec_instructions
+Opcode is 0x6100
+Executing exec_instructions
+Opcode is 0x3040
+Executing exec_instructions
+Opcode is 0x6905
+Executing exec_instructions
+Opcode is 0x6c15
+Executing exec_instructions
+Opcode is 0x6e00
+Executing exec_instructions
+Opcode is 0x2387
+Execute subroutine starting at address NNN: 0x387
+Executing exec_instructions
+Opcode is 0x600a
+Executing exec_instructions
+Opcode is 0xf015
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
+Executing exec_instructions
+Opcode is 0xf007
+Executing exec_instructions
+Opcode is 0x3000
+Executing exec_instructions
+Opcode is 0x124b
