@@ -2,6 +2,7 @@
 #define CHIP8CPU_H
 
 #include <string>
+#include <random>
 
 #define MEMSIZE 0x1000
 #define STARTADDR 0x200
@@ -40,6 +41,8 @@ namespace chip8 {
 				unsigned char memory[MEMSIZE] { 0x12, 0x00 };
 				struct {
 					// Everything else in interface
+					// Font
+					unsigned char font[80];
 					cpu _cpu;
 					// Keyboard - Store keys as a bitmap?
 					// Display
@@ -50,6 +53,8 @@ namespace chip8 {
 					unsigned char display_mem[(HEIGHT*WIDTH) / 8];
 				};
 			};
+
+			std::mt19937 rnd;
 
 			void exec_opcode8xxx(unsigned short &opcode, unsigned char &o, unsigned char &x, 
 							unsigned char &y, unsigned char &n, unsigned char &nn, 

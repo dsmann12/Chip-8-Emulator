@@ -1,2 +1,2 @@
 all:
-		g++ chip8.cpp -std=c++11 -o chip8
+		g++ chip8.cpp -std=c++14 -o chip8

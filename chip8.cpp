@@ -4,6 +4,8 @@
 #include "chip8.h"
 #include <cstdio>
 #include <climits>
+#include <chrono>
+#include <ctime>
 
 void error(const std::string &msg) {
 	std::cout << msg << std::endl;
@@ -12,6 +14,31 @@ void error(const std::string &msg) {
 
 chip8::chip8::chip8() { 
 	this->_cpu.pc = 0x200;
+	this->rnd.seed(std::time(nullptr));
+
+	unsigned char font_data[80] = {
+		0xF0, 0x90, 0x90, 0x90, 0xF0,		// 0
+		0x20, 0x60, 0x20, 0x20, 0x70,		// 1
+		0xF0, 0x10, 0xF0, 0x80, 0xF0,
+		0xF0, 0x10, 0xF0, 0x10, 0xF0,
+		0x90, 0x90, 0xF0, 0x10, 0x10,
+		0xF0, 0x80, 0xF0, 0x10, 0xF0,
+		0xF0, 0x80, 0xF0, 0x90, 0xF0,
+		0xF0, 0x10, 0x20, 0x40, 0x40,
+		0xF0, 0x90, 0xF0, 0x90, 0xF0,
+		0xF0, 0x90, 0xF0, 0x10, 0xF0,
+		0xF0, 0x90, 0xF0, 0x90, 0x90,
+		0xE0, 0x90, 0xE0, 0x90, 0xE0,
+		0xF0, 0x80, 0x80, 0x80, 0xF0,
+		0xE0, 0x90, 0x90, 0x90, 0xE0,
+		0xF0, 0x80, 0xF0, 0x80, 0xF0,
+		0xF0, 0x80, 0xF0, 0x80, 0x80		// F		
+	};
+
+	for (unsigned char i = 0; i < 80; ++i) {
+		this->memory[i] = font_data[i];
+	}
+
 }
 
 void chip8::chip8::exec_opcodeFxxx(unsigned short &opcode, unsigned char &x, unsigned char &nn) {
@@ -22,7 +49,7 @@ void chip8::chip8::exec_opcodeFxxx(unsigned short &opcode, unsigned char &x, uns
 			break;
 		// 0xFX0A -> Wait for a keypress and store the result in register VX
 		case 0x0A:
-			std::cout << "Unimplemented opcode\n";
+		std::cout << "Unimplemented opcode\n";
 			break;
 		// 0xFX15 -> Set delay timer to the value of register VX
 		case 0x15:
@@ -39,22 +66,35 @@ void chip8::chip8::exec_opcodeFxxx(unsigned short &opcode, unsigned char &x, uns
 		// 0xFX29 -> Set I to memory address of the sprite data corresponding to the hex digit
 		// stored in register VX
 		case 0x29:
-			std::cout << "Unimplemented opcode\n";
+			this->_cpu.i_reg = (5 * this->_cpu.v[x]) & 0xFFF;
 			break;
 		// 0xFX33 -> Store the binary coded decimal equivalent of value stored in register VX at
 		// addresses I, I+1, and I+2
 		case 0x33:
-			std::cout << "Unimplemented opcode\n";
+			{
+				unsigned char vx = this->_cpu.v[x];
+				this->memory[this->_cpu.i_reg & 0xFFF] = (vx / 100) % 10;
+				this->memory[(this->_cpu.i_reg+1) & 0xFFF] = (vx / 10) % 10;
+				this->memory[(this->_cpu.i_reg+2) & 0xFFF] = vx % 10;
+			}
 			break;
 		// 0xFX55 -> Store the values of registers V0 to VX inclusive in memory starting at address I
 		// I is set to I + X + 1 after operation
 		case 0x55:
-			std::cout << "Unimplemented opcode\n";
+			{
+			for(unsigned char i = 0; i <= x; ++i) {
+				this->memory[this->_cpu.i_reg++ & 0xFFF] = this->_cpu.v[i] & 0xFF;
+			}
+			}
 			break;
 		// 0xFX65 -> Fill registers V0 to VX inclusive with values stored in memory starting at address I
 		// I is set to I + X + 1 after operation
 		case 0x65:
-			std::cout << "Unimplemented opcode\n";
+			{
+			for(unsigned char i = 0; i <= x; ++i) {
+				this->_cpu.v[i] = this->memory[this->_cpu.i_reg++ & 0xFFF];
+			}
+			}
 			break;
 	}
 }
@@ -156,7 +196,12 @@ void chip8::chip8::exec_instruction() {
 	switch(o) {
 		case 0x0:
 			// O0E0 -> Return from a subroutine
-			std::cout << "Return from a subroutine\n";
+			if (nn == 0xEE) {
+				std::cout << "Return from a subroutine\n";
+				this->_cpu.pc = this->stack[this->_cpu.sp--];
+			} else if (nn == 0xE0) {
+				std::cout << "Clear the screen\n";
+			}
 			break;
 		case 0x1:
 			// 1NNN -> Jump to address NNN
@@ -165,6 +210,8 @@ void chip8::chip8::exec_instruction() {
 		case 0x2:
 			// 2NNN -> Execute subroutine starting at address NNN
 			std::cout << "Execute subroutine starting at address NNN: " << nnn << "\n";
+			this->stack[this->_cpu.sp++ % STACKSIZE] = this->_cpu.pc;
+			this->_cpu.pc += 2;
 			break;
 		case 0x3:
 			// 3XNN -> Skip the following instruction if the value of register VX equals NN
@@ -209,15 +256,19 @@ void chip8::chip8::exec_instruction() {
 			break;
 		case 0xB:
 			// BNNN -> Jump to address NNN + V0
-			std::cout << "Unimplemented opcode\n";
+			this->_cpu.pc = nnn + this->_cpu.v[0x0];
 			break;
 		case 0xC:
 			// CXNN -> Set VX to a random number with mask of NN
-			std::cout << "Unimplemented opcode\n";
+			{
+			std::uniform_int_distribution<std::mt19937::result_type> dist255(0, 255);
+			this->_cpu.v[x] = dist255(rnd) && nn;
+			}
 			break;
 		case 0xD:
 			// Draw a sprite at position VX, VY with N bytes of sprite data starting at address stored in I
 			// Set VF to 01 if any set pixels are changed to unset, and 00 otherwise
+			{
 			std::cout << "Draw a sprite at position "
 			<< "VX: " << +this->_cpu.v[x] << " VY: " << +this->_cpu.v[y]
 			<< " with N: " << +n << " bytes of sprite data "
@@ -226,16 +277,44 @@ void chip8::chip8::exec_instruction() {
 			// VX must contain a value between 00 and 3F (0-63)
 			// VY must contain a value between 00 and 1F (0-31)
 			
-			// get location of sprite data
-			auto loc = memory[this->_cpu.i_reg];
-			for (int i = 0; i < n; ++i) {
-				auto byte = memory[this->_cpu.i_reg + i];
-				std::cout << "Sprite " << +i << " is " << +byte << std::endl;
+			// get sprite row data
+			// sprite is made of n bytes of data. So n rows.
+			// each byte corresponds to a row of pixels. 8 columns.
+			
 
-				// Then go through each bit of byte
-				for (int j = 0; j < 8; ++j) {
+			// display_mem is 256 bytes of display data where each bit corresponds to a pixel on the screen
+			// VX,VY is coordinate on screen
+			// Will draw the rectangle consisting of (VX, VY), (VX+8, VY), (VX, VY+n), (VX+8, VY+n)
+			// However, graphics use flat arrays so each row consists of every WIDTH elements
+			// So if VX = 1, then data is at least in WIDTH index and at most in WIDTH + HEIGHT      
+			// To make sure, don't write in areas off screen, VX and VX+8 by WIDTH and VY and VY+n by HEIGHT 
+			// Since display memory encodes byte data as bits we can divide by 8 to get correct location in display memory
+			// However, if VX is not divisible by 8, then we will be changing the inner bits of a byte
+			// And will also need to change the first remaining bits of the next byte
+			// If any set pixels are toggled, then set VF to 01 else set VF to 00
+			auto put = [this](unsigned char index, unsigned char byte) {
+				return (
+							// first XOR display_memory[index] with byte and store value in display_mem
+							(
+							(display_mem[index] ^= byte)
+							// then XOR with byte again to get bits that were previously set to 1
+							^ byte)							
+							// then AND with byte to get only bits that were changed from 1 to 0 byte first XOR
+							// If this value is not 0, then a collision occurred
+							& byte
+						);
+						    	
+			};
 
-				}	
+			unsigned char col = 0x0;
+			unsigned char vx = this->_cpu.v[x], vy = this->_cpu.v[y];
+			unsigned short i = this->_cpu.i_reg;
+			while(n--) {
+				col |= 	put(((vx+0)%WIDTH + (vy+n)%HEIGHT * WIDTH)/8, this->memory[(i+n) & 0xFFF] >> (vx % 8))
+					|	put(((vx+7)%WIDTH + (vy+n)%HEIGHT * WIDTH)/8, this->memory[(i+n) & 0xFFF] << (8 - (vx % 8)));
+			}
+
+			this->_cpu.v[0xF] = (col != 0x0);
 			}
 			break;
 		case 0xE:
