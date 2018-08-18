@@ -14,7 +14,8 @@
 // Interpreter Namespace
 namespace chip8 {
 	// CPU
-	struct cpu {	
+	struct cpu {
+		// 16 8bit registers
 		unsigned char v[REGISTERCOUNT];
 		// 16bit address register I
 		unsigned short i_reg;
@@ -25,6 +26,8 @@ namespace chip8 {
 		unsigned char delay_timer, sound_timer;
 	};
 
+	// Font pixel data
+	extern unsigned char font_data[80];
 	// Display
 
 	// Keyboard
@@ -36,6 +39,7 @@ namespace chip8 {
 			chip8();
 			void exec_instruction();
 			void load_rom(const std::string &rom);
+			bool is_waiting();
 		private:
 			union {
 				unsigned char memory[MEMSIZE] { 0x12, 0x00 };
@@ -44,6 +48,9 @@ namespace chip8 {
 					// Font
 					unsigned char font[80];
 					cpu _cpu;
+					// waiting wire that tells system if waiting for a key
+					// also holds value of key it is possibly waiting for
+					unsigned char waiting;
 					// Keyboard - Store keys as a bitmap?
 					// Display
 					// Stack
