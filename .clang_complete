@@ -1,0 +1,7 @@
+-std=c++11
+-x
+c++
+-I/usr/include/c++/7
+-lSDL2
+-lGL
+-lGLEW

@@ -22,7 +22,7 @@ namespace chip8 {
 		// 16bit program counter
 		unsigned short pc;
 		// 8bit stack pointer
-		unsigned char sp;				
+		unsigned char sp;
 		unsigned char delay_timer, sound_timer;
 	};
 
@@ -31,7 +31,6 @@ namespace chip8 {
 	// Display
 
 	// Keyboard
-		
 	// Chip8 System
 	// Systems connects components and runs system functions
 	class chip8 {
@@ -57,6 +56,7 @@ namespace chip8 {
 					// 48 bytes for stack. 24 memory locations
 					unsigned short stack[STACKSIZE];
 					// 256 bytes allocated for display
+          // (64 * 32 = 2048) / 8 = 256
 					unsigned char display_mem[(HEIGHT*WIDTH) / 8];
 				};
 			};
